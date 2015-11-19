@@ -191,7 +191,7 @@ void draw() {
           }
         }
         for(int j = 0; j < bulletCount; j++){
-          if(bulletPosX[j] <= enemyPosX[i] + 61 && bulletPosY[j] + 27 >= enemyPosY[i] && bulletPosY[j] <= enemyPosY[i] + 61){
+          if(bulletPosX[j] + 31 >= enemyPosX[i] && bulletPosX[j] <= enemyPosX[i] + 61 && bulletPosY[j] + 27 >= enemyPosY[i] && bulletPosY[j] <= enemyPosY[i] + 61){
             explosion[i] = 0;
             explosionPosX[i] = enemyPosX[i];
             explosionPosY[i] = enemyPosY[i];
