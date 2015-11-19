@@ -292,7 +292,7 @@ void keyReleased(){
     for(int i = 0; i < bulletCount; i++){
       if(bulletState[i]){
         bulletPosX[i] = heroPosX;
-        bulletPosY[i] = heroPosY;
+        bulletPosY[i] = heroPosY + 12;
         bulletState[i] = false;
         break;
       }
